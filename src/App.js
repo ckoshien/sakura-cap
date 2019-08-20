@@ -82,86 +82,25 @@ class App extends React.Component {
             非公式特設サイト
           </span>
         <div
-            style={{
-              backgroundColor:'#5d4037',
-              color: '#f5f5f5',
-              border:'solid 1px',
-              borderColor:'#f5f5f5',
-              borderRadius: '5px 5px 5px 5px',
-              verticalAlign: 'top',
-              fontSize: 13.5,
-              padding: '7px 10px 7px 10px',
-              margin: 5
-            }}
+            className='brown'
           >予選</div>
           <div
-            style={{
-              backgroundColor:'#ab47bc',
-              color: '#f5f5f5',
-              border:'solid 1px',
-              borderColor:'#f5f5f5',
-              borderRadius: '5px 5px 5px 5px',
-              verticalAlign: 'top',
-              fontSize: 13.5,
-              padding: '7px 10px 7px 10px',
-              margin: 7
-            }}
+            className='purple'  
           >Aリーグ</div>
         {leagueA}
         <div
-            style={{
-              backgroundColor:'#ab47bc',
-              color: '#f5f5f5',
-              border:'solid 1px',
-              borderColor:'#f5f5f5',
-              borderRadius: '5px 5px 5px 5px',
-              verticalAlign: 'top',
-              fontSize: 13.5,
-              padding: '7px 10px 7px 10px',
-              margin: 7
-            }}
+            className='purple'
           >Bリーグ</div>
         {leagueB}
         <div
-            style={{
-              backgroundColor:'#ab47bc',
-              color: '#f5f5f5',
-              border:'solid 1px',
-              borderColor:'#f5f5f5',
-              borderRadius: '5px 5px 5px 5px',
-              verticalAlign: 'top',
-              fontSize: 13.5,
-              padding: '7px 10px 7px 10px',
-              margin: 7
-            }}
+            className='purple'
           >Cリーグ</div>
         {leagueC}
         <div
-            style={{
-              backgroundColor:'#ab47bc',
-              color: '#f5f5f5',
-              border:'solid 1px',
-              borderColor:'#f5f5f5',
-              borderRadius: '5px 5px 5px 5px',
-              verticalAlign: 'top',
-              fontSize: 13.5,
-              padding: '7px 10px 7px 10px',
-              margin: 7
-            }}
-          >Dリーグ</div>
+          className='purple'
+        >Dリーグ</div>
         {leagueD}
-        <div
-            style={{
-              backgroundColor:'#f8bbd0',
-              color: '#444444',
-              border:'solid 1px',
-              borderColor:'#f5f5f5',
-              borderRadius: '5px 5px 5px 5px',
-              verticalAlign: 'top',
-              fontSize: 13.5,
-              padding: '7px 10px 7px 10px',
-              margin: 7
-            }}
+        <div className='sakura'
           >決勝トーナメント</div>
           <div
             style={{
