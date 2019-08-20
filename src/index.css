@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+body{
+  font-family: Noto Sans Japanese;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@media(max-width:450px){
+  table{
+    font-size: 12px;
+    max-width: 380px;
+  }
+  th{
+    font-size: 12px;
+  }
+  td{
+    padding: 4px;
+    white-space: nowrap;
+  }
+}
+
+.scroll{
+  overflow: auto
+}
+
+nav{
+    /*background-color:#00897b;*/
+    /*background: linear-gradient(to right, #f8bbd0, #ba68c8);*/
+    height: 50px;
+    font-size: 24px;
+}
+
+
+.number{
+  text-align: right;
+  font-family: 'Roboto';
 }
