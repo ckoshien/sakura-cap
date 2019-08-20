@@ -14,12 +14,12 @@ body{
     font-size: 12px;
   }
   td{
-    padding: 4px;
+    padding: 2px;
     white-space: nowrap;
   }
 }
-table{
-  max-width: 380px;
+.react-bootstrap-table{
+  max-width: 450px;
 }
 
 .scroll{
