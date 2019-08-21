@@ -52,26 +52,25 @@ class App extends React.Component {
           <Tab title="大会概要" eventKey={0}>
             <Summary/>
           </Tab>
-          <Tab title="予選A" eventKey={1}>
+          <Tab title="予選A/B" eventKey={1}>
             <div className='brown'>1日目:予選</div>
             <div className='purple'>Aリーグ</div>
             {leagueA}
-          </Tab>
-          <Tab title="予選B" eventKey={2}>
-            <div className='brown'>1日目:予選</div>
             <div className='purple'>Bリーグ</div>
             {leagueB}
           </Tab>
-          <Tab title="予選C" eventKey={3}>
+          
+          <Tab title="予選C/D" eventKey={3}>
             <div className='brown'>1日目:予選</div>
             <div className='purple'>Cリーグ</div>
             {leagueC}
-          </Tab>
-          <Tab title="予選D" eventKey={4}>
-            <div className='brown'>1日目:予選</div>
             <div className='purple'>Dリーグ</div>
             {leagueD}
           </Tab>
+          {/* <Tab title="予選D" eventKey={4}>
+            <div className='brown'>1日目:予選</div>
+            
+          </Tab> */}
           <Tab title="決勝T" eventKey={5}>
             <div className='brown'>2日目</div>
             <div className='sakura'>決勝トーナメント</div>

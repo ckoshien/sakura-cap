@@ -33,12 +33,6 @@ export default class Summary extends React.Component{
                             </a>
                         </dd>
                         <dt>
-                            結果
-                        </dt>
-                        <dd>
-                            各予選、決勝タブからご覧ください。
-                        </dd>
-                        <dt>
                             参加チーム一覧
                         </dt>
                         <div>
@@ -46,6 +40,13 @@ export default class Summary extends React.Component{
                                 keyField={'name'}
                                 data={team_data}/>
                         </div>
+                        <dt>
+                            結果
+                        </dt>
+                        <dd>優勝: 明治大</dd>
+                        <dd>準優勝: 北大</dd>
+                        <dd>3位: 奈良大</dd>
+                        <dd>4位: 京都大</dd>
                     </dl>
                 </div>
                 

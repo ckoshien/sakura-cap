@@ -107,9 +107,10 @@ nav{
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover{
-  background: #fff;
+  /*background: #fff;*/
   border-color: #aaa;
-  background-color: #ba68c8;
+  /*background-color: #ba68c8;*/
+  background: linear-gradient(to right bottom, #ba68c8, #ecc7f1);
   color: white;
   border-radius: 5px 5px 0 0;
   margin-top: 5px; 
