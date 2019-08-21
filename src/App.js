@@ -16,6 +16,13 @@ import {Tabs, TabList, Tab, TabPanel} from 'react-bootstrap'
 import Summary from './Summary';
 
 class App extends React.Component {
+  componentWillMount(){
+    window.prerenderReady = false;
+  }
+  componentDidMount(){
+    window.prerenderReady = true;
+  }
+
   render(){
     let leagueA=(
       <div>
