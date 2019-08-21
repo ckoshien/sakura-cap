@@ -49,29 +49,7 @@ class App extends React.Component {
       <div>
         <SakuraNavbar/>
         <Tabs>
-          <Tab title="大会概要" eventKey={0}>
-            <Summary/>
-          </Tab>
-          <Tab title="予選A/B" eventKey={1}>
-            <div className='brown'>1日目:予選</div>
-            <div className='purple'>Aリーグ</div>
-            {leagueA}
-            <div className='purple'>Bリーグ</div>
-            {leagueB}
-          </Tab>
-          
-          <Tab title="予選C/D" eventKey={3}>
-            <div className='brown'>1日目:予選</div>
-            <div className='purple'>Cリーグ</div>
-            {leagueC}
-            <div className='purple'>Dリーグ</div>
-            {leagueD}
-          </Tab>
-          {/* <Tab title="予選D" eventKey={4}>
-            <div className='brown'>1日目:予選</div>
-            
-          </Tab> */}
-          <Tab title="決勝T" eventKey={5}>
+        <Tab title="決勝T" eventKey={0}>
             <div className='brown'>2日目</div>
             <div className='sakura'>決勝トーナメント</div>
             <div
@@ -81,12 +59,12 @@ class App extends React.Component {
             >
               <a href='https://the-tournament.jp/tournaments/9uJs6wG4sz0b8JWwF43q'>
               結果(THE TOURNAMENT)
+              </a>
               <img 
               style={{
-                width:'99%'
+                width:'95%'
               }}
               src={'/tournament.png'}/>
-              </a>
               
             </div>
             <div className='sakura'>表彰状</div>
@@ -112,6 +90,27 @@ class App extends React.Component {
               src={'/awards/4.png'}/>
               Powered By <a href='https://hyou.show/'>WEB表彰</a>
           </Tab>
+          
+          <Tab title="予選A/B" eventKey={1}>
+            <div className='brown'>1日目:予選</div>
+            <div className='purple'>Aリーグ</div>
+            {leagueA}
+            <div className='purple'>Bリーグ</div>
+            {leagueB}
+          </Tab>
+          
+          <Tab title="予選C/D" eventKey={3}>
+            <div className='brown'>1日目:予選</div>
+            <div className='purple'>Cリーグ</div>
+            {leagueC}
+            <div className='purple'>Dリーグ</div>
+            {leagueD}
+          </Tab>
+          <Tab title="大会概要" eventKey={4}>
+            <Summary/>
+          </Tab>
+
+          
         </Tabs>
       </div>
         
