@@ -1,3 +1,17 @@
+import React from 'react';
+
+export const twFormatter=(cell, row)=>{
+    if(row.twitter === null || row.twitter === undefined){
+        return(cell)
+    }else{
+        return(
+            <a href={row.twitter}>
+                {cell}
+            </a>
+        )
+    }
+}
+
 export const league_a_data = [
     {
         team_name:'一橋A',
@@ -292,4 +306,90 @@ export const league_d_columns = [
         text:'vs一橋B',
         dataField:'vs一橋B'
     },
+]
+
+export const team_data = [
+    {
+        name:'一橋大学キャップ投げ倶楽部',
+        twitter:'https://twitter.com/CAPHitotsubashi',
+        qualifying_group:'A,D'
+    },
+    {
+        name:'奈良大',
+        twitter:undefined,
+        qualifying_group:'A'
+    },
+    {
+        name:'東京世田谷キャッパーズ',
+        twitter:'https://twitter.com/TSCappers',
+        qualifying_group:'A'
+    },
+    {
+        name:'千葉工大 非公認キャップ投げサークル',
+        twitter:'https://twitter.com/cit_capthrow',
+        qualifying_group:'A'
+    },
+    {
+        name:'明治大学キャップ投げ倶楽部',
+        twitter:'https://twitter.com/ohmeijicap',
+        qualifying_group:'B'
+    },
+    {
+        name:'蓋世',
+        twitter:undefined,
+        qualifying_group:'B'
+    },
+    {
+        name:'東京理科大学キャップ野球サークル',
+        twitter:'https://twitter.com/RikadaiCap',
+        qualifying_group:'B'
+    },
+    {
+        name:'横国キャップ野球クラブ Sounds On Beach',
+        twitter:'https://twitter.com/beach_sounds',
+        qualifying_group:'B,D'
+    },
+    {
+        name:'関西連合',
+        twitter:undefined,
+        qualifying_group:'C'
+    },
+    {
+        name:'蓋鯱',
+        twitter:undefined,
+        qualifying_group:'C'
+    },
+    {
+        name:'神奈川総合高校キャップ投げ同好会',
+        twitter:'https://twitter.com/Kns_ctc',
+        qualifying_group:'C'
+    },
+    {
+        name:'北大キャップ投げサークル',
+        twitter:'https://twitter.com/HU_cappers',
+        qualifying_group:'C'
+    },
+    {
+        name:'京都大学キャップ投げ倶楽部',
+        twitter:'https://twitter.com/kuctc_official',
+        qualifying_group:'D'
+    },
+    {
+        name:'目白蓋式野球倶楽部(学習院)',
+        twitter:'https://twitter.com/GCTC2019',
+        qualifying_group:'D'
+    },
+]
+
+export const team_columns = [
+    {
+        text:'チーム名',
+        dataField:'name',
+        formatter:twFormatter
+    },
+    {
+        text:'予選グループ',
+        dataField:'qualifying_group'
+    }
+    
 ]

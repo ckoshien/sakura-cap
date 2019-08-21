@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Table from './Table';
 import {
@@ -12,6 +11,9 @@ import {
   league_d_columns,
   league_d_data
 } from './Data'
+import SakuraNavbar from './SakuraNavbar';
+import {Tabs, TabList, Tab, TabPanel} from 'react-bootstrap'
+import Summary from './Summary';
 
 class App extends React.Component {
   render(){
@@ -45,78 +47,75 @@ class App extends React.Component {
     )
     return (
       <div>
-        <nav>
-          <span
-            style={{
-                backgroundColor:'#f8bbd0',
-                color:'aliceblue',
-                padding:3,
-                width:10
-              }}>桜</span>咲く
-          <span
-            style={{
-              backgroundColor:'#ba68c8',
-              color:'aliceblue',
-              padding:3,
-              width:10
-            }}
-          >佐</span>倉
-          <span
-            style={{
-              backgroundColor:'#5d4037',
-              color:'aliceblue',
-              padding:3,
-              width:10
-            }}
-          >蓋</span>ざんまい
-        </nav>
-        <span
-            style={{
-              fontSize:12,
-              paddingLeft:20,
-              position:'absolute',
-              right:5,
-              top:10
-            }}
-          >
-            非公式特設サイト
-          </span>
-        <div
-            className='brown'
-          >予選</div>
-          <div
-            className='purple'  
-          >Aリーグ</div>
-        {leagueA}
-        <div
-            className='purple'
-          >Bリーグ</div>
-        {leagueB}
-        <div
-            className='purple'
-          >Cリーグ</div>
-        {leagueC}
-        <div
-          className='purple'
-        >Dリーグ</div>
-        {leagueD}
-        <div className='sakura'
-          >決勝トーナメント</div>
-          <div
-            style={{
-              margin:5
-            }}
-          >
-            <a href='https://the-tournament.jp/tournaments/9uJs6wG4sz0b8JWwF43q'>
-            結果(THE TOURNAMENT)
-            </a>
+        <SakuraNavbar/>
+        <Tabs>
+          <Tab title="大会概要" eventKey={0}>
+            <Summary/>
+          </Tab>
+          <Tab title="予選A" eventKey={1}>
+            <div className='brown'>1日目:予選</div>
+            <div className='purple'>Aリーグ</div>
+            {leagueA}
+          </Tab>
+          <Tab title="予選B" eventKey={2}>
+            <div className='brown'>1日目:予選</div>
+            <div className='purple'>Bリーグ</div>
+            {leagueB}
+          </Tab>
+          <Tab title="予選C" eventKey={3}>
+            <div className='brown'>1日目:予選</div>
+            <div className='purple'>Cリーグ</div>
+            {leagueC}
+          </Tab>
+          <Tab title="予選D" eventKey={4}>
+            <div className='brown'>1日目:予選</div>
+            <div className='purple'>Dリーグ</div>
+            {leagueD}
+          </Tab>
+          <Tab title="決勝T" eventKey={5}>
+            <div className='brown'>2日目</div>
+            <div className='sakura'>決勝トーナメント</div>
+            <div
+              style={{
+                margin:5
+              }}
+            >
+              <a href='https://the-tournament.jp/tournaments/9uJs6wG4sz0b8JWwF43q'>
+              結果(THE TOURNAMENT)
+              <img 
+              style={{
+                width:'99%'
+              }}
+              src={'/tournament.png'}/>
+              </a>
+              
+            </div>
+            <div className='sakura'>表彰状</div>
             <img 
-            style={{
-              width:'99%'
-            }}
-            src={'/tournament.png'}/>
-          </div>
+              style={{
+                width:'99%'
+              }}
+              src={'/awards/1.png'}/>
+              <img 
+              style={{
+                width:'99%'
+              }}
+              src={'/awards/2.png'}/>
+              <img 
+              style={{
+                width:'99%'
+              }}
+              src={'/awards/3.png'}/>
+              <img 
+              style={{
+                width:'99%'
+              }}
+              src={'/awards/4.png'}/>
+              Powered By <a href='https://hyou.show/'>WEB表彰</a>
+          </Tab>
+        </Tabs>
       </div>
+        
     );
   }
 }
