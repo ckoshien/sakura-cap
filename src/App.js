@@ -120,7 +120,6 @@ class App extends React.Component {
           
         </Tabs>
         <footer>
-          ご意見・ご要望は @ckoshien_tech まで。
         </footer>
       </div>
         
