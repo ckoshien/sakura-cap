@@ -492,75 +492,94 @@ export const league_d_columns = [
 
 export const team_data = [
     {
-        name:'一橋大学キャップ投げ倶楽部',
-        twitter:'https://twitter.com/CAPHitotsubashi',
-        qualifying_group:'A,D'
-    },
-    {
-        name:'奈良大',
-        twitter:undefined,
-        qualifying_group:'A'
-    },
-    {
-        name:'東京世田谷キャッパーズ',
-        twitter:'https://twitter.com/TSCappers',
-        qualifying_group:'A'
-    },
-    {
-        name:'千葉工大 非公認キャップ投げサークル',
-        twitter:'https://twitter.com/cit_capthrow',
-        qualifying_group:'A'
-    },
-    {
         name:'明治大学キャップ投げ倶楽部',
         twitter:'https://twitter.com/ohmeijicap',
-        qualifying_group:'B'
-    },
-    {
-        name:'蓋世',
-        twitter:undefined,
-        qualifying_group:'B'
-    },
-    {
-        name:'東京理科大学キャップ野球サークル',
-        twitter:'https://twitter.com/RikadaiCap',
-        qualifying_group:'B'
-    },
-    {
-        name:'横国キャップ野球クラブ Sounds On Beach',
-        twitter:'https://twitter.com/beach_sounds',
-        qualifying_group:'B,D'
-    },
-    {
-        name:'関西連合',
-        twitter:undefined,
-        qualifying_group:'C'
-    },
-    {
-        name:'蓋鯱',
-        twitter:undefined,
-        qualifying_group:'C'
-    },
-    {
-        name:'神奈川総合高校キャップ投げ同好会',
-        twitter:'https://twitter.com/Kns_ctc',
-        qualifying_group:'C'
+        qualifying_group:'B(1位)',
+        result:'優勝'
     },
     {
         name:'北大キャップ投げサークル',
         twitter:'https://twitter.com/HU_cappers',
-        qualifying_group:'C'
+        qualifying_group:'C(2位)',
+        result:'準優勝'
+    },
+    {
+        name:'奈良大',
+        twitter:undefined,
+        qualifying_group:'A(2位)',
+        result:'3位'
     },
     {
         name:'京都大学キャップ投げ倶楽部',
         twitter:'https://twitter.com/kuctc_official',
-        qualifying_group:'D'
+        qualifying_group:'D(1位)',
+        result:'4位'
     },
+    {
+        name:'一橋大学キャップ投げ倶楽部',
+        twitter:'https://twitter.com/CAPHitotsubashi',
+        qualifying_group:'A(1位)/D(4位)',
+        result:'ベスト8/1回戦敗退'
+
+    },
+    {
+        name:'蓋世',
+        twitter:undefined,
+        qualifying_group:'B(2位)',
+        result:'ベスト8'
+    },
+    {
+        name:'横国キャップ野球クラブ',
+        twitter:'https://twitter.com/beach_sounds',
+        qualifying_group:'B(4位)/D(2位)',
+        result:'1回戦敗退/ベスト8'
+    },
+    {
+        name:'関西連合',
+        twitter:undefined,
+        qualifying_group:'C(1位)',
+        result:'ベスト8'
+    },
+    {
+        name:'東京世田谷キャッパーズ',
+        twitter:'https://twitter.com/TSCappers',
+        qualifying_group:'A(3位)',
+        result:'1回戦敗退'
+    },
+    {
+        name:'千葉工大 非公認キャップ投げサークル',
+        twitter:'https://twitter.com/cit_capthrow',
+        qualifying_group:'A(4位)',
+        result:'1回戦敗退'
+    },
+    {
+        name:'蓋鯱',
+        twitter:undefined,
+        qualifying_group:'C(3位)',
+        result:'1回戦敗退'
+    },
+    {
+        name:'神奈川総合高校キャップ投げ同好会',
+        twitter:'https://twitter.com/Kns_ctc',
+        qualifying_group:'C(4位)',
+        result:'1回戦敗退'
+    },
+    
+    
     {
         name:'目白蓋式野球倶楽部(学習院)',
         twitter:'https://twitter.com/GCTC2019',
-        qualifying_group:'D'
+        qualifying_group:'D(3位)',
+        result:'1回戦敗退'
     },
+    {
+        name:'東京理科大学キャップ野球サークル',
+        twitter:'https://twitter.com/RikadaiCap',
+        qualifying_group:'B(3位)',
+        result:''
+    },
+    
+    
 ]
 
 export const team_columns = [
@@ -570,8 +589,13 @@ export const team_columns = [
         formatter:twFormatter
     },
     {
-        text:'予選グループ',
-        dataField:'qualifying_group'
-    }
+        text:'1日目予選成績',
+        dataField:'qualifying_group',
+        classes:'nowrap'
+    },
+    {
+        text:'2日目決勝T成績',
+        dataField:'result'
+    },
     
 ]

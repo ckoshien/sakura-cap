@@ -40,13 +40,6 @@ export default class Summary extends React.Component{
                                 keyField={'name'}
                                 data={team_data}/>
                         </div>
-                        <dt>
-                            結果
-                        </dt>
-                        <dd>優勝: 明治大(Bリーグ1位)</dd>
-                        <dd>準優勝: 北大(Cリーグ2位)</dd>
-                        <dd>3位: 奈良大(Aリーグ2位)</dd>
-                        <dd>4位: 京都大(Dリーグ1位)</dd>
                     </dl>
                 </div>
                 
