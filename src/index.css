@@ -6,17 +6,21 @@ body{
   color: #444444;
 }
 
-@media(max-width:450px){
+@media(max-width:500px){
   table{
     font-size: 12px;
   }
   th{
-    font-size: 12px;
+    font-size: 10px;
+    white-space: nowrap;
   }
   td{
     padding: 2px;
     white-space: nowrap;
   }
+}
+th{
+  white-space: nowrap;
 }
 .react-bootstrap-table{
   max-width: 450px;
@@ -171,4 +175,8 @@ footer{
       #744d30 0.4%,
       #744d30 0.5%
     );
+}
+
+.nowrap{
+  white-space: nowrap;
 }

@@ -74,28 +74,27 @@ class App extends React.Component {
               src={'/tournament.png'}/>
               
             </div>
-            <div className='sakura'>表彰状</div>
+            <div className='sakura'>表彰状 Powered By <a href='https://hyou.show/'>WEB表彰</a></div>
             <img 
               style={{
-                width:'99%'
+                width:'95%'
               }}
               src={'/awards/1.png'}/>
               <img 
               style={{
-                width:'99%'
+                width:'95%'
               }}
               src={'/awards/2.png'}/>
               <img 
               style={{
-                width:'99%'
+                width:'95%'
               }}
               src={'/awards/3.png'}/>
               <img 
               style={{
-                width:'99%'
+                width:'95%'
               }}
               src={'/awards/4.png'}/>
-              Powered By <a href='https://hyou.show/'>WEB表彰</a>
           </Tab>
           
           <Tab title="予選A/B" eventKey={1}>
