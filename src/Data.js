@@ -599,3 +599,40 @@ export const team_columns = [
     },
     
 ]
+
+export const qualifying_game_data = 
+{
+    'a':{
+        1:{
+            topScore:13,
+            topTeam:'一橋A',
+            bottomScore:1,
+            bottomTeam:'奈良大',
+            twVideos:[
+
+            ]
+        }
+    },
+    'b':{
+        5:{
+            topScore:5,
+            topTeam:'蓋世',
+            bottomScore:2,
+            bottomTeam:'横国A',
+            twVideos:[
+                '1164790289896095744'
+            ] 
+        }
+    },
+    'c':{
+        1:{
+            topScore:8,
+            topTeam:'関西連合',
+            bottomScore:1,
+            bottomTeam:'北大',
+            twVideos:[
+                '1165204324739207169',
+            ]
+        }
+    }
+}
