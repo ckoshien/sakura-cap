@@ -5,6 +5,7 @@ import SakuraNavbar from './SakuraNavbar';
 import Main from './Main'
 import history from './history'
 import Game from './Game'
+import { qualifying_game_data,tournament_game_data } from './Data';
 
 class App extends React.Component {
   componentWillMount(){
@@ -22,7 +23,14 @@ class App extends React.Component {
         <Router history={history}>
           <Switch>
             <Route exact path="/" component={Main}/>
-            <Route exact path="/qualifying/:group/:game_number" component={Game}/>
+            <Route exact path="/qualifying/:group/:game_number" 
+              render={
+                props => <Game data={qualifying_game_data} {...props} />}
+            />
+            <Route exact path="/tournament/:group/:game_number" 
+              render={
+                props => <Game data={tournament_game_data} {...props} />}
+            />
           </Switch>
         </Router>
         <footer>

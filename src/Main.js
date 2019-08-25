@@ -71,33 +71,17 @@ export default class Main extends React.Component {
               src={"/tournament.png"}
             />
           </div>
-          <div className="sakura">
-            表彰状 Powered By <a href="https://hyou.show/">WEB表彰</a>
+          <div className="brown">1回戦</div>
+          <div
+            style={{
+              fontSize:16,
+              padding:10,
+              textAlign:'center'
+          }}
+          >
+            <div>明治 3-1 神奈総</div>
+            <div>世田谷 <a href={'/tournament/first/2'}>1-2</a> 横国B</div>
           </div>
-          <img
-            style={{
-              width: "95%"
-            }}
-            src={"/awards/1.png"}
-          />
-          <img
-            style={{
-              width: "95%"
-            }}
-            src={"/awards/2.png"}
-          />
-          <img
-            style={{
-              width: "95%"
-            }}
-            src={"/awards/3.png"}
-          />
-          <img
-            style={{
-              width: "95%"
-            }}
-            src={"/awards/4.png"}
-          />
         </Tab>
 
         <Tab title="予選A/B" eventKey={1}>

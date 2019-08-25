@@ -16,11 +16,17 @@ export const resultFormatter=(cell, row)=>{
     if(cell === null || cell === undefined){
         return(cell)
     }else{
+        let score = []
+        if(cell.detail !== undefined){
+            score =  <a href={cell.detail}>{cell.score}</a>
+        }else{
+            score =  <span>{cell.score}</span>
+        }
         return(
             <span>
                 {cell.result}
                 <br/>
-                {cell.score}
+                {score}
             </span>
         )
     }
@@ -190,7 +196,8 @@ export const league_c_data = [
         },
         'vs北大':{
             result:'○',
-            score:'8-1'
+            score:'8-1',
+            detail:'/qualifying/c/1'
         },
         win:2,
         lose:1,
@@ -603,6 +610,7 @@ export const team_columns = [
 export const qualifying_game_data = 
 {
     'a':{
+        name:'予選Aリーグ',
         1:{
             topScore:13,
             topTeam:'一橋A',
@@ -614,6 +622,7 @@ export const qualifying_game_data =
         }
     },
     'b':{
+        name:'予選Bリーグ',
         5:{
             topScore:5,
             topTeam:'蓋世',
@@ -625,6 +634,7 @@ export const qualifying_game_data =
         }
     },
     'c':{
+        name:'予選Cリーグ',
         1:{
             topScore:8,
             topTeam:'関西連合',
@@ -632,7 +642,24 @@ export const qualifying_game_data =
             bottomTeam:'北大',
             twVideos:[
                 '1165204324739207169',
+                '1165534581887393792'
             ]
         }
     }
+}
+
+export const tournament_game_data = 
+{
+    'first':{
+        name:'1回戦',
+        2:{
+            topScore:1,
+            topTeam:'世田谷',
+            bottomScore:2,
+            bottomTeam:'横国B',
+            twVideos:[
+                '1164193493259976704'
+            ]
+        }
+    },
 }
