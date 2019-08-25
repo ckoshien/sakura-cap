@@ -190,7 +190,8 @@ export const league_c_data = [
         team_name:'関西連合',
         'vs蓋鯱':{
             result:'○',
-            score: '15-0'
+            score: '15-0',
+            detail:'/qualifying/c/2'
         },
         'vs神奈総':{
             result:'×',
@@ -643,7 +644,15 @@ export const qualifying_game_data =
             bottomScore:1,
             bottomTeam:'北大',
             twVideos:[
-                '1165204324739207169',
+                '1165204324739207169'
+            ]
+        },
+        2:{
+            topScore:15,
+            topTeam:'関西連合',
+            bottomScore:0,
+            bottomTeam:'蓋鯱',
+            twVideos:[
                 '1165534581887393792'
             ]
         }
