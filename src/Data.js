@@ -660,6 +660,39 @@ export const tournament_game_data =
             twVideos:[
                 '1164193493259976704'
             ]
+        },
+        3:{
+            topScore:10,
+            topTeam:'蓋世',
+            bottomScore:2,
+            bottomTeam:'蓋鯱',
+            twVideos:[
+                '1164802118676439040',
+                '1164598486345498624',
+                '1164386798639833088'
+            ]
+        },
+        6:{
+            topScore:0,
+            topTeam:'横国A',
+            bottomScore:5,
+            bottomTeam:'関西連合',
+            twVideos:[
+                '1164790289896095744'
+            ]
         }
     },
+    'quaterfinals':{
+        name:'準々決勝',
+        2:{
+            topScore:5,
+            topTeam:'蓋世',
+            bottomScore:8,
+            bottomTeam:'京大',
+            twVideos:[
+                '1164365427079692288'
+            ]
+        }
+        
+    }
 }

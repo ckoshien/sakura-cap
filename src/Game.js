@@ -55,7 +55,11 @@ export default class Game extends React.Component{
             )
         }else{
             return(
-                <div>Not Found.</div>
+                <div>
+                    <hr/>
+                    お探しのページは準備中か、見つかりません。
+                    <img src='/img/bottle-cap.png'/>
+                </div>
             )
         }
     }
