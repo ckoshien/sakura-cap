@@ -16,11 +16,17 @@ export const resultFormatter=(cell, row)=>{
     if(cell === null || cell === undefined){
         return(cell)
     }else{
+        let score = []
+        if(cell.detail !== undefined){
+            score =  <a href={cell.detail}>{cell.score}</a>
+        }else{
+            score =  <span>{cell.score}</span>
+        }
         return(
             <span>
                 {cell.result}
                 <br/>
-                {cell.score}
+                {score}
             </span>
         )
     }
@@ -190,7 +196,8 @@ export const league_c_data = [
         },
         'vs北大':{
             result:'○',
-            score:'8-1'
+            score:'8-1',
+            detail:'/qualifying/c/1'
         },
         win:2,
         lose:1,
@@ -599,3 +606,93 @@ export const team_columns = [
     },
     
 ]
+
+export const qualifying_game_data = 
+{
+    'a':{
+        name:'予選Aリーグ',
+        1:{
+            topScore:13,
+            topTeam:'一橋A',
+            bottomScore:1,
+            bottomTeam:'奈良大',
+            twVideos:[
+
+            ]
+        }
+    },
+    'b':{
+        name:'予選Bリーグ',
+        5:{
+            topScore:5,
+            topTeam:'蓋世',
+            bottomScore:2,
+            bottomTeam:'横国A',
+            twVideos:[
+                '1164790289896095744'
+            ] 
+        }
+    },
+    'c':{
+        name:'予選Cリーグ',
+        1:{
+            topScore:8,
+            topTeam:'関西連合',
+            bottomScore:1,
+            bottomTeam:'北大',
+            twVideos:[
+                '1165204324739207169',
+                '1165534581887393792'
+            ]
+        }
+    }
+}
+
+export const tournament_game_data = 
+{
+    'first':{
+        name:'1回戦',
+        2:{
+            topScore:1,
+            topTeam:'世田谷',
+            bottomScore:2,
+            bottomTeam:'横国B',
+            twVideos:[
+                '1164193493259976704'
+            ]
+        },
+        3:{
+            topScore:10,
+            topTeam:'蓋世',
+            bottomScore:2,
+            bottomTeam:'蓋鯱',
+            twVideos:[
+                '1164802118676439040',
+                '1164598486345498624',
+                '1164386798639833088'
+            ]
+        },
+        6:{
+            topScore:0,
+            topTeam:'横国A',
+            bottomScore:5,
+            bottomTeam:'関西連合',
+            twVideos:[
+                '1164790289896095744'
+            ]
+        }
+    },
+    'quaterfinals':{
+        name:'準々決勝',
+        2:{
+            topScore:5,
+            topTeam:'蓋世',
+            bottomScore:8,
+            bottomTeam:'京大',
+            twVideos:[
+                '1164365427079692288'
+            ]
+        }
+        
+    }
+}

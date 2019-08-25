@@ -121,6 +121,7 @@ nav{
 }
 
 @media(max-width:480px){
+  /*スクロールバーのデザイン*/
   ::-webkit-scrollbar-thumb {
     border-radius: 2px;
     /*background: #477D80;*/
@@ -179,4 +180,9 @@ footer{
 
 .nowrap{
   white-space: nowrap;
+}
+
+.table>tbody>tr>td>span>a{
+  text-decoration: underline;
+  color: #444444;
 }
