@@ -41,7 +41,8 @@ export const league_a_data = [
         },
         'vs奈良大':{
             result:'○',
-            score: '13-1'
+            score: '13-1',
+            //detail:'/qualifying/a/1'
         },
         'vs世田谷':{
             result:'○',
@@ -167,7 +168,8 @@ export const league_b_data = [
         team_name:'横国A',
         'vs蓋世':{
             result:'×',
-            score: '2-5'
+            score: '2-5',
+            detail:'/qualifying/b/5'
         },
         'vs明治':{
             result:'×',
