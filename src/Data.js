@@ -214,7 +214,8 @@ export const league_c_data = [
         },
         'vs神奈総':{
             result:'○',
-            score: '14-0'
+            score: '14-0',
+            detail:'/qualifying/c/5'
         },
         'vs関西連合':{
             result:'×',
@@ -644,7 +645,8 @@ export const qualifying_game_data =
             bottomScore:1,
             bottomTeam:'北大',
             twVideos:[
-                '1165204324739207169'
+                '1165204324739207169',
+                '1164130375460782080'
             ]
         },
         2:{
@@ -653,7 +655,17 @@ export const qualifying_game_data =
             bottomScore:0,
             bottomTeam:'蓋鯱',
             twVideos:[
-                '1165534581887393792'
+                '1165534581887393792',
+                '1165239407802081280'
+            ]
+        },
+        5:{
+            topScore:14,
+            topTeam:'北大',
+            bottomScore:0,
+            bottomTeam:'神奈総',
+            twVideos:[
+                '1163108884300480514'
             ]
         }
     }
@@ -689,7 +701,8 @@ export const tournament_game_data =
             bottomScore:5,
             bottomTeam:'関西連合',
             twVideos:[
-                '1164790289896095744'
+                '1164790289896095744',
+                '1163760987830308864'
             ]
         }
     },
