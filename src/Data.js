@@ -653,7 +653,8 @@ export const qualifying_game_data =
             bottomScore:0,
             bottomTeam:'蓋鯱',
             twVideos:[
-                '1165534581887393792'
+                '1165534581887393792',
+                '1165239407802081280'
             ]
         }
     }

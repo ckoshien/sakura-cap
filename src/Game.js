@@ -26,21 +26,6 @@ export default class Game extends React.Component{
                     <div className='purple'>
                         {group_name} 試合{game_number}
                     </div>
-                    <div 
-                        style={{
-                            fontSize:20,
-                            //textAlign:'center',
-                            position:'relative',
-                            left:'25vw',
-                            padding:10
-                        }}
-                    >
-                        {result.topTeam}
-                        &nbsp;{result.topScore}&nbsp;
-                        -
-                        &nbsp;{result.bottomScore}&nbsp;
-                        {result.bottomTeam}
-                    </div>
                     <div
                         style={{
                             //display:'flex',
@@ -49,6 +34,23 @@ export default class Game extends React.Component{
                             justifyContent:'center'
                         }}
                     >
+                        <div 
+                            style={{
+                                fontSize:20,
+                                textAlign:'center',
+                                maxWidth:520,
+                                //position:'relative',
+                                //left:'25vw',
+                                padding:10
+                            }}
+                        >
+                            {result.topTeam}
+                            &nbsp;{result.topScore}&nbsp;
+                            -
+                            &nbsp;{result.bottomScore}&nbsp;
+                            {result.bottomTeam}
+                        </div>
+                        
                         {videos}
                     </div>
                 </div>
