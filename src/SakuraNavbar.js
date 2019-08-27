@@ -9,7 +9,7 @@ export default class SakuraNavbar extends React.Component{
                         fontSize:14,
                         padding:2
                     }}
-                >第1回キャップ野球全国大会</div>
+                >キャップ野球全国大会</div>
                 <span
                 style={{
                     //backgroundColor:'#f8bbd0',

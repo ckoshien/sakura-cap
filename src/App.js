@@ -37,7 +37,7 @@ class App extends React.Component {
         <footer>
         <GoogleAds
           client="ca-pub-6455792541973521"
-          slot="1903562094"
+          //slot="1903562094"
           className="adsbygoogle"
         data-adtest="on"
         format="auto"
