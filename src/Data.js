@@ -140,7 +140,8 @@ export const league_b_data = [
         },
         'vs理科大':{
             result:'○',
-            score: '18-3'
+            score: '18-3',
+            detail:'/qualifying/b/4'
         },
         win:2,
         lose:1,
@@ -627,6 +628,15 @@ export const qualifying_game_data =
     },
     'b':{
         name:'予選Bリーグ',
+        4:{
+            topScore:18,
+            topTeam:'蓋世',
+            bottomScore:3,
+            bottomTeam:'理科大',
+            twVideos:[
+                '1164356370419736576'
+            ] 
+        },
         5:{
             topScore:5,
             topTeam:'蓋世',
