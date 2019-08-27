@@ -7,7 +7,8 @@ export default class TournamentDetail extends React.Component{
             style={{
               fontSize:16,
               padding:10,
-              textAlign:'center'
+              textAlign:'center',
+              maxWidth:650
           }}
           >
             <table className='table'>
