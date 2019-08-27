@@ -6,6 +6,7 @@ import Main from './Main'
 import history from './history'
 import Game from './Game'
 import { qualifying_game_data,tournament_game_data } from './Data';
+import GoogleAds from 'react-google-ads';
 
 class App extends React.Component {
   componentWillMount(){
@@ -34,6 +35,14 @@ class App extends React.Component {
           </Switch>
         </Router>
         <footer>
+        <GoogleAds
+          client="ca-pub-6455792541973521"
+          slot="1903562094"
+          className="adsbygoogle"
+        data-adtest="on"
+        format="auto"
+        //style={{ width: "auto", height: 100 }}
+        />
         </footer>
       </div>
         
