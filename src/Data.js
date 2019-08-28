@@ -46,7 +46,8 @@ export const league_a_data = [
         },
         'vs世田谷':{
             result:'○',
-            score: '3-1'
+            score: '3-1',
+            detail:'/qualifying/a/2'
         },
         win:3,
         lose:0,
@@ -114,7 +115,8 @@ export const league_b_data = [
         team_name:'明治',
         'vs蓋世':{
             result:'○',
-            score: '3-2'
+            score: '3-2',
+            detail:'/qualifying/b/1'
         },
         'vs横国A':{
             result:'○',
@@ -625,10 +627,28 @@ export const qualifying_game_data =
             twVideos:[
 
             ]
+        },
+        2:{
+            topScore:3,
+            topTeam:'一橋A',
+            bottomScore:1,
+            bottomTeam:'世田谷',
+            twVideos:[
+                '1166564452986163201'
+            ]
         }
     },
     'b':{
         name:'予選Bリーグ',
+        1:{
+            topScore:3,
+            topTeam:'明治',
+            bottomScore:2,
+            bottomTeam:'蓋世',
+            twVideos:[
+                '1166498976968798208'
+            ] 
+        },
         2:{
             topScore:5,
             topTeam:'明治',
@@ -735,6 +755,19 @@ export const tournament_game_data =
             bottomTeam:'京大',
             twVideos:[
                 '1164365427079692288'
+            ]
+        }
+        
+    },
+    'semifinals':{
+        name:'準決勝',
+        1:{
+            topScore:7,
+            topTeam:'明治',
+            bottomScore:3,
+            bottomTeam:'京大',
+            twVideos:[
+                '1166711994746982402'
             ]
         }
         

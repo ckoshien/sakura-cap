@@ -87,7 +87,7 @@ export default class TournamentDetail extends React.Component{
                   <td rowSpan={2} className='purple'>準決勝</td>
                   <td>第1試合</td>
                   <td>明治</td>
-                  <td><b>7</b> - 3</td>
+                  <td><a href="/tournament/semifinals/1"><b>7</b> - 3</a></td>
                   <td>京大</td>
                 </tr>
                 <tr>

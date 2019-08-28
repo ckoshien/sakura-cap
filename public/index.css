@@ -186,11 +186,10 @@ footer{
 .table>tbody>tr>td>a
 {
   text-decoration: underline;
-  text-decoration-color: #ba68c8;
   color: #444444;
 }
 .table>tbody>tr>td>a>b,
 .table>tbody>tr>td>b{
   /*text-decoration: underline;*/
-  color: #ce93d8;
+  color: #c276cf;
 }
