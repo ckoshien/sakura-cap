@@ -182,7 +182,15 @@ footer{
   white-space: nowrap;
 }
 
-.table>tbody>tr>td>span>a{
+.table>tbody>tr>td>span>a,
+.table>tbody>tr>td>a
+{
   text-decoration: underline;
+  text-decoration-color: #ba68c8;
   color: #444444;
+}
+.table>tbody>tr>td>a>b,
+.table>tbody>tr>td>b{
+  /*text-decoration: underline;*/
+  color: #ce93d8;
 }
