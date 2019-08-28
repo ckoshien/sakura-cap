@@ -767,7 +767,8 @@ export const tournament_game_data =
             bottomScore:3,
             bottomTeam:'京大',
             twVideos:[
-                '1166711994746982402'
+                //'1166711994746982402',
+                '1166771175516540928'
             ]
         }
         
