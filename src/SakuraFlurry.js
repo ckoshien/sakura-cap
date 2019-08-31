@@ -19,7 +19,7 @@ let defaultWidth = w.innerWidth - 10;
 export default class SakuraFlurry extends React.Component {
   componentDidMount() {
     setInterval(() => {
-      for (var i = 0; i < 20; i++) {
+      for (var i = 0; i < 15; i++) {
         if (t[i] < u + h - 40) {
           if (y[i] >= c[i]) {
             l[i] = l[i] + 0.5 + Math.random() * 0.5;
@@ -92,12 +92,12 @@ export default class SakuraFlurry extends React.Component {
         c[i]++;
 	  }
       k++;
-    }, 45);
+    }, 70);
   }
 
   render() {
     let elements = [];
-    for (var i = 0; i < 20; i++) {
+    for (var i = 0; i < 15; i++) {
       t[i] = Math.random() * -1000 + u;
       l[i] = Math.random() * defaultWidth;
       y[i] = Math.random() * 40 + 5;
