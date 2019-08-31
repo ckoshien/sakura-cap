@@ -7,6 +7,7 @@ import history from './history'
 import Game from './Game'
 import { qualifying_game_data,tournament_game_data } from './Data';
 import GoogleAds from 'react-google-ads';
+import SakuraFlurry from './SakuraFlurry';
 
 class App extends React.Component {
   componentWillMount(){
@@ -21,6 +22,7 @@ class App extends React.Component {
     return (
       <div>
         <SakuraNavbar/>
+        <SakuraFlurry/>
         <Router history={history}>
           <Switch>
             <Route exact path="/" component={Main}/>
