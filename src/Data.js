@@ -301,7 +301,8 @@ export const league_d_data = [
         },
         'vs一橋B':{
             result:'○',
-            score: '15-0'
+            score: '15-0',
+            detail:'/qualifying/d/5'
         },
         win:2,
         lose:1,
@@ -721,6 +722,18 @@ export const qualifying_game_data =
             bottomTeam:'神奈総',
             twVideos:[
                 '1163108884300480514'
+            ]
+        }
+    },
+    'd':{
+        name:'予選Cリーグ',
+        5:{
+            topScore:15,
+            topTeam:'横国B',
+            bottomScore:0,
+            bottomTeam:'一橋B',
+            twVideos:[
+                '1170359955930505216'
             ]
         }
     }
