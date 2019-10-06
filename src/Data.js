@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const JCBLSCORE = 'https://jcblscore-react.netlify.com'
+export const JCBLSCORE = 'https://jcbl-score.com'
 
 export const twFormatter=(cell, row)=>{
     if(row.twitter === null || row.twitter === undefined){
