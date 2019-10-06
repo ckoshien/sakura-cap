@@ -1,5 +1,7 @@
 import React from 'react';
 
+export const JCBLSCORE = 'https://jcblscore-react.netlify.com'
+
 export const twFormatter=(cell, row)=>{
     if(row.twitter === null || row.twitter === undefined){
         return(cell)
@@ -37,17 +39,18 @@ export const league_a_data = [
         team_name:'一橋A',
         'vs千葉工大':{
             result:'○',
-            score:'24-0'
+            score:'24-0',
+            detail: JCBLSCORE+'/game/detail/394'
         },
         'vs奈良大':{
             result:'○',
             score: '13-1',
-            //detail:'/qualifying/a/1'
+            detail: JCBLSCORE+'/game/detail/392'
         },
         'vs世田谷':{
             result:'○',
             score: '3-1',
-            detail:'/qualifying/a/2'
+            detail:JCBLSCORE+'/game/detail/393'
         },
         win:3,
         lose:0,
@@ -57,11 +60,13 @@ export const league_a_data = [
         team_name:'奈良大',
         'vs千葉工大':{
             result:'○',
-            score: '4-2'
+            score: '4-2',
+            detail:JCBLSCORE+'/game/detail/396'
         },
         'vs世田谷':{
             result:'○',
-            score:'13-3'
+            score:'13-3',
+            detail:JCBLSCORE+'/game/detail/395'
         },
         'vs一橋A':{
             result:'×',
@@ -75,7 +80,8 @@ export const league_a_data = [
         team_name:'世田谷',
         'vs千葉工大':{
             result:'○',
-            score:'19-9'
+            score:'19-9',
+            detail:JCBLSCORE+'/game/detail/397'
         },
         'vs奈良大':{
             result:'×',
@@ -116,16 +122,17 @@ export const league_b_data = [
         'vs蓋世':{
             result:'○',
             score: '3-2',
-            detail:'/qualifying/b/1'
+            detail:JCBLSCORE+'/game/detail/398'
         },
         'vs横国A':{
             result:'○',
-            score: '6-0'
+            score: '6-0',
+            detail:JCBLSCORE+'/game/detail/400'
         },
         'vs理科大':{
             result:'○',
             score: '5-4',
-            detail:'/qualifying/b/2'
+            detail:JCBLSCORE+'/game/detail/399'
         },
         win:3,
         lose:0,
@@ -135,7 +142,8 @@ export const league_b_data = [
         team_name:'蓋世',
         'vs横国A':{
             result:'○',
-            score: '5-2'
+            score: '5-2',
+            detail:JCBLSCORE+'/game/detail/402'
         },
         'vs明治':{
             result:'×',
@@ -144,7 +152,8 @@ export const league_b_data = [
         'vs理科大':{
             result:'○',
             score: '18-3',
-            detail:'/qualifying/b/4'
+            detail:'/qualifying/b/4',
+            detail:JCBLSCORE+'/game/detail/401'
         },
         win:2,
         lose:1,
@@ -162,7 +171,8 @@ export const league_b_data = [
         },
         'vs横国A':{
             result:'○',
-            score: '8-6'
+            score: '8-6',
+            detail:JCBLSCORE+'/game/detail/403'
         },
         win:1,
         lose:2,
@@ -172,8 +182,7 @@ export const league_b_data = [
         team_name:'横国A',
         'vs蓋世':{
             result:'×',
-            score: '2-5',
-            detail:'/qualifying/b/5'
+            score: '2-5'
         },
         'vs明治':{
             result:'×',
@@ -195,16 +204,17 @@ export const league_c_data = [
         'vs蓋鯱':{
             result:'○',
             score: '15-0',
-            detail:'/qualifying/c/2'
+            detail:JCBLSCORE+'/game/detail/405'
         },
         'vs神奈総':{
             result:'×',
-            score: '5-9'
+            score: '5-9',
+            detail:JCBLSCORE+'/game/detail/406'
         },
         'vs北大':{
             result:'○',
             score:'8-1',
-            detail:'/qualifying/c/1'
+            detail:JCBLSCORE+'/game/detail/404'
         },
         win:2,
         lose:1,
@@ -214,12 +224,13 @@ export const league_c_data = [
         team_name:'北大',
         'vs蓋鯱':{
             result:'○',
-            score: '7-6'
+            score: '7-6',
+            detail:JCBLSCORE+'/game/detail/407'
         },
         'vs神奈総':{
             result:'○',
             score: '14-0',
-            detail:'/qualifying/c/5'
+            detail:JCBLSCORE+'/game/detail/408'
         },
         'vs関西連合':{
             result:'×',
@@ -237,7 +248,8 @@ export const league_c_data = [
         },
         'vs神奈総':{
             result:'○',
-            score: '6-1'
+            score: '6-1',
+            detail:JCBLSCORE+'/game/detail/409'
         },
         'vs関西連合':{
             result:'×',
@@ -273,15 +285,18 @@ export const league_d_data = [
         team_name:'京大',
         'vs学習院':{
             result:'○',
-            score: '8-2'
+            score: '8-2',
+            detail:JCBLSCORE+'/game/detail/411'
         },
         'vs一橋B':{
             result:'○',
-            score: '15-0'
+            score: '15-0',
+            detail:JCBLSCORE+'/game/detail/412'
         },
         'vs横国B':{
             result:'○',
-            score: '7-3'
+            score: '7-3',
+            detail:JCBLSCORE+'/game/detail/410'
         },
         win:3,
         lose:0,
@@ -293,7 +308,8 @@ export const league_d_data = [
         team_name:'横国B',
         'vs学習院':{
             result:'○',
-            score: '15-0'
+            score: '15-0',
+            detail:JCBLSCORE+'/game/detail/413'
         },
         'vs京大':{
             result:'×',
@@ -302,7 +318,7 @@ export const league_d_data = [
         'vs一橋B':{
             result:'○',
             score: '15-0',
-            detail:'/qualifying/d/5'
+            detail:JCBLSCORE+'/game/detail/414'
         },
         win:2,
         lose:1,
@@ -312,7 +328,8 @@ export const league_d_data = [
         team_name:'学習院',
         'vs一橋B':{
             result:'○',
-            score: '6-5'
+            score: '6-5',
+            detail:JCBLSCORE+'/game/detail/415'
         },
         'vs京大':{
             result:'×',
