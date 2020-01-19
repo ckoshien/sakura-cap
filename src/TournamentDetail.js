@@ -29,7 +29,7 @@ export default class TournamentDetail extends React.Component{
                 </tr>
                 <tr>
                   <td>第3試合</td>
-                  <td>チビダーズ</td>
+                  <td>チビターズ</td>
                   <td> - </td>
                   <td>横国B</td>
                 </tr>

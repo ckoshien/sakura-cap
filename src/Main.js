@@ -55,8 +55,14 @@ export default class Main extends React.Component {
     return (
       <Tabs>
         <Tab title="東ブロック" eventKey={0}>
-          <div className="brown">東ブロック</div>
-          {/* <div className="sakura">決勝トーナメント</div> */}
+          <div className="brown">日程</div>
+          <div
+            style={{
+              paddingLeft:20
+            }}
+          >2020年3月23日(月)
+          <br/>横浜市平沼記念体育館</div>
+          <div className="sakura">組み合わせ</div>
           <TournamentDetail/>
           <div
             style={{
