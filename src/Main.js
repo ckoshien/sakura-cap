@@ -54,7 +54,7 @@ export default class Main extends React.Component {
     );
     return (
       <Tabs>
-        <Tab title="決勝T" eventKey={0}>
+        <Tab title="東ブロック" eventKey={0}>
           <div className="brown">2日目</div>
           <div className="sakura">決勝トーナメント</div>
           <TournamentDetail/>
@@ -63,37 +63,23 @@ export default class Main extends React.Component {
               margin: 5
             }}
           >
-            <a href="https://the-tournament.jp/tournaments/9uJs6wG4sz0b8JWwF43q">
-              結果(THE TOURNAMENT)
+            <a href="https://the-tournament.jp/tournaments/tSv0unsilh2gOODrZbRt">
+              組み合わせ(THE TOURNAMENT)
             </a>
             <img
               style={{
                 width: "95%"
               }}
-              src={"/tournament.png"}
+              src={"/img/tournament.png"}
             />
           </div>
           
         </Tab>
+        <Tab title="西ブロック(準備中)" eventKey={1} disabled></Tab>
 
-        <Tab title="予選A/B" eventKey={1}>
-          <div className="brown">1日目:予選</div>
-          <div className="purple">Aリーグ</div>
-          {leagueA}
-          <div className="purple">Bリーグ</div>
-          {leagueB}
-        </Tab>
-
-        <Tab title="予選C/D" eventKey={3}>
-          <div className="brown">1日目:予選</div>
-          <div className="purple">Cリーグ</div>
-          {leagueC}
-          <div className="purple">Dリーグ</div>
-          {leagueD}
-        </Tab>
-        <Tab title="大会概要" eventKey={4}>
+        {/* <Tab title="大会概要" eventKey={4}>
           <Summary />
-        </Tab>
+        </Tab> */}
       </Tabs>
     );
   }

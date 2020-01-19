@@ -1,6 +1,6 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router'
-import './App.css';
+import './index.scss';
 import SakuraNavbar from './SakuraNavbar';
 import Main from './Main'
 import history from './history'
