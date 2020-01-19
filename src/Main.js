@@ -55,8 +55,8 @@ export default class Main extends React.Component {
     return (
       <Tabs>
         <Tab title="東ブロック" eventKey={0}>
-          <div className="brown">2日目</div>
-          <div className="sakura">決勝トーナメント</div>
+          <div className="brown">東ブロック</div>
+          {/* <div className="sakura">決勝トーナメント</div> */}
           <TournamentDetail/>
           <div
             style={{

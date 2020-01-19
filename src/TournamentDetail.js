@@ -23,7 +23,7 @@ export default class TournamentDetail extends React.Component{
                 </tr>
                 <tr>
                   <td>第2試合</td>
-                  <td>目白(学習院)</td>
+                  <td>学習院</td>
                   <td> - </td>
                   <td>秋田CTC</td>
                 </tr>
@@ -37,13 +37,13 @@ export default class TournamentDetail extends React.Component{
                   <td>第4試合</td>
                   <td>一橋A</td>
                   <td> - </td>
-                  <td>埼玉CAPドラゴンズ</td>
+                  <td>埼玉CAP</td>
                 </tr>
                 <tr>
                   <td>第5試合</td>
                   <td>明治・日大A</td>
                   <td> - </td>
-                  <td>市立浦和サラマンダーズ</td>
+                  <td>市立浦和</td>
                 </tr>
                 <tr>
                   <td>第6試合</td>
@@ -55,7 +55,7 @@ export default class TournamentDetail extends React.Component{
                 <tr>
                   <td rowSpan={4} className='brown'>準々決勝</td>
                   <td>第1試合</td>
-                  <td>東京世田谷キャッパーズ</td>
+                  <td>世田谷</td>
                   <td> - </td>
                   <td></td>
                 </tr>
