@@ -12,7 +12,7 @@ import {
   league_d_columns,
   league_d_data
 } from './Data'
-import TournamentDetail from "./TournamentDetail";
+import TournamentEast from "./TournamentEast";
 
 export default class Main extends React.Component {
   render() {
@@ -63,7 +63,7 @@ export default class Main extends React.Component {
           >2020年3月23日(月)
           <br/>横浜市平沼記念体育館</div>
           <div className="sakura">組み合わせ</div>
-          <TournamentDetail/>
+          <TournamentEast/>
           <div
             style={{
               margin: 5

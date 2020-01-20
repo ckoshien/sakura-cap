@@ -196,3 +196,16 @@ footer{
   /*text-decoration: underline;*/
   color: #c276cf;
 }
+
+.game_card{
+  margin-bottom:10px;
+  text-align: left;
+  img{
+    @media (max-width:600px) {
+      width: 98vw;
+    }
+    @media (min-width:600px) {
+      width: 600px;
+    }
+  }
+}
