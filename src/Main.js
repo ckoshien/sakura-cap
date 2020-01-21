@@ -63,7 +63,6 @@ export default class Main extends React.Component {
           >2020年3月23日(月)
           <br/>横浜市平沼記念体育館</div>
           <div className="sakura">組み合わせ</div>
-          <TournamentEast/>
           <div
             style={{
               margin: 5
@@ -79,6 +78,8 @@ export default class Main extends React.Component {
               src={"/img/tournament.png"}
             />
           </div>
+          <TournamentEast/>
+          
           
         </Tab>
         <Tab title="西ブロック(準備中)" eventKey={1} disabled></Tab>
