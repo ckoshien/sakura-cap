@@ -54,7 +54,13 @@ export default class Main extends React.Component {
     );
     return (
       <Tabs>
-        <Tab title="東ブロック" eventKey={0}>
+        <Tab title="概要" eventKey={0}>
+          <div className="game_card">
+            <img src={'/img/2nd-cap-festa.jpg'}/>
+          </div>
+          
+        </Tab>
+        <Tab title="東ブロック" eventKey={1}>
           <div className="brown">日程</div>
           <div
             style={{
@@ -82,7 +88,7 @@ export default class Main extends React.Component {
           
           
         </Tab>
-        <Tab title="西ブロック(準備中)" eventKey={1} disabled></Tab>
+        <Tab title="西ブロック(準備中)" eventKey={2} disabled></Tab>
 
         {/* <Tab title="大会概要" eventKey={4}>
           <Summary />

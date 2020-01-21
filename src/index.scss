@@ -111,16 +111,18 @@ nav{
   cursor: pointer;
   text-align: center;
 }
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:focus,
-.nav-tabs>li.active>a:hover{
-  /*background: #fff;*/
-  border-color: #aaa;
-  /*background-color: #ba68c8;*/
-  background: linear-gradient(to right bottom, #ba68c8, #ecc7f1);
-  color: white;
-  border-radius: 5px 5px 0 0;
-  margin-top: 5px; 
+.nav-tabs{
+  li.active{
+    a, a:focus, a:hover{
+       /*background: #fff;*/
+      border-color: #aaa;
+      /*background-color: #ba68c8;*/
+      background: linear-gradient(to right bottom, #ba68c8, #ecc7f1);
+      color: white;
+      border-radius: 5px 5px 0 0;
+      margin-top: 5px; 
+    }
+  }
 }
 
 @media(max-width:480px){
