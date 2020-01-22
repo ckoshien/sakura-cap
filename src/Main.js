@@ -1,7 +1,7 @@
 import React from "react";
 import { Tabs, TabList, Tab, TabPanel } from "react-bootstrap";
 import Summary from "./Summary";
-import Table from './Table';
+import Table from "./Table";
 import {
   league_a_columns,
   league_a_data,
@@ -11,7 +11,7 @@ import {
   league_c_data,
   league_d_columns,
   league_d_data
-} from './Data'
+} from "./Data";
 import TournamentEast from "./TournamentEast";
 
 export default class Main extends React.Component {
@@ -56,30 +56,35 @@ export default class Main extends React.Component {
       <Tabs>
         <Tab title="概要" eventKey={0}>
           <div className="game_card">
-            <img src={'/img/2nd-cap-festa.jpg'}/>
+            <img src={"/img/2nd-cap-festa.jpg"} />
           </div>
-          
         </Tab>
         <Tab title="東ブロック" eventKey={1}>
           <div className="brown">日程</div>
           <div
             style={{
-              paddingLeft:20
+              paddingLeft: 20
             }}
-          >2020年3月23日(月)
-          <br/>横浜市平沼記念体育館</div>
-          <div className="sakura">組み合わせ</div>
-          <a href="https://the-tournament.jp/tournaments/tSv0unsilh2gOODrZbRt">
-              組み合わせ(THE TOURNAMENT)
-          </a>
-          <div className="game_card">
-            
-            <img src={"/img/tournament.png"}
-            />
+          >
+            2020年3月23日(月)
+            <br />
+            横浜市平沼記念体育館
           </div>
-          <TournamentEast/>
-          
-          
+          <div className="sakura">組み合わせ</div>
+          <div
+            style={{
+              padding:10
+            }}
+          >
+            <a href="https://the-tournament.jp/tournaments/tSv0unsilh2gOODrZbRt">
+              組み合わせ(THE TOURNAMENT)
+            </a>
+            <div className="game_card">
+              <img src={"/img/tournament.png"} />
+            </div>
+          </div>
+
+          <TournamentEast />
         </Tab>
         <Tab title="西ブロック(準備中)" eventKey={2} disabled></Tab>
 
