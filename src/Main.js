@@ -69,19 +69,12 @@ export default class Main extends React.Component {
           >2020年3月23日(月)
           <br/>横浜市平沼記念体育館</div>
           <div className="sakura">組み合わせ</div>
-          <div
-            style={{
-              margin: 5
-            }}
-          >
-            <a href="https://the-tournament.jp/tournaments/tSv0unsilh2gOODrZbRt">
+          <a href="https://the-tournament.jp/tournaments/tSv0unsilh2gOODrZbRt">
               組み合わせ(THE TOURNAMENT)
-            </a>
-            <img
-              style={{
-                width: "95%"
-              }}
-              src={"/img/tournament.png"}
+          </a>
+          <div className="game_card">
+            
+            <img src={"/img/tournament.png"}
             />
           </div>
           <TournamentEast/>
