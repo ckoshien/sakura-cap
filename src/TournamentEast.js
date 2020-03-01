@@ -19,6 +19,9 @@ export default class TournamentEast extends React.Component {
         >
           <div className="brown">一回戦</div>
           <div className="game_card">
+            <img src={"/img/tournament/east/7.jpg"} />
+          </div>
+          <div className="game_card">
             <img src={"/img/tournament/east/1.jpg"} />
           </div>
           <div className="game_card">
@@ -36,11 +39,14 @@ export default class TournamentEast extends React.Component {
           <div className="game_card">
             <img src={"/img/tournament/east/6.jpg"} />
           </div>
+          <div className="game_card">
+            <img src={"/img/tournament/east/8.jpg"} />
+          </div>
         </div>
 
         <div className="brown">準々決勝</div>
         <div className="game_card">
-          <img src={"/img/tournament/east/7.jpg"} />
+          <img src={"/img/tournament/east/unknown.jpg"} />
         </div>
         <div className="game_card">
           <img src={"/img/tournament/east/unknown.jpg"}  />
@@ -49,7 +55,7 @@ export default class TournamentEast extends React.Component {
           <img src={"/img/tournament/east/unknown.jpg"}  />
         </div>
         <div className="game_card">
-          <img src={"/img/tournament/east/10.jpg"}  />
+          <img src={"/img/tournament/east/unknown.jpg"}  />
         </div>
         <div className="purple">準決勝</div>
         <div className="game_card">
